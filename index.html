@@ -12,6 +12,7 @@
       --text: #1f2937;
       --accent: #c2410c;
       --border: #eadfce;
+      --muted: #6b7280;
     }
 
     * { box-sizing: border-box; }
@@ -59,6 +60,14 @@
       font-weight: 600;
       margin-bottom: 16px;
     }
+
+    .note {
+      margin-top: 24px;
+      padding: 16px 18px;
+      border-left: 4px solid var(--accent);
+      background: #fff7ed;
+      color: var(--muted);
+    }
   </style>
 </head>
 <body>
@@ -73,6 +82,10 @@
       <li>提交 commit</li>
       <li>推送 push 到 GitHub</li>
     </ul>
+    <section class="note">
+      <strong>分支开发示例：</strong>
+      当前这段内容是在 <code>feature/add-learning-note</code> 分支里新增的，目的是模拟一个待合并的小功能。
+    </section>
   </main>
 </body>
 </html>
